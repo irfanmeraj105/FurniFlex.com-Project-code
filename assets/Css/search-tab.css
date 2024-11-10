@@ -1,0 +1,128 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+/* variables  */
+:root {
+  --golden-color: #d09423;
+  --green-color: #2d5356;
+  --gray-background: #d6d3d3;
+  --box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.05);
+  --text-color: #61605e;
+  --border-color: #d09423;
+  --heading-font-weight: 600;
+  --heading-font-family: sans-serif;
+  --icon-color: white;
+  --content-box-padding: 4rem 4rem 0.3rem 4rem;
+}
+body,
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.search-tab {
+  position: absolute;
+  z-index: 1;
+  right: 9.5rem;
+  top: 4rem;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-tab .search-bar input {
+  background-color: white;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: 17px;
+  color: black;
+  border: none;
+  outline: none;
+  width: 100%;
+  min-width: 900px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.search-bar button,
+.search-bar span {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.search-bar span {
+  right: 92px;
+  color: var(--golden-color);
+  cursor: pointer;
+}
+
+.search-bar button {
+  background-color: var(--golden-color);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.3rem 1rem;
+}
+
+.search-bar button a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-bar input:focus {
+  border: 2px solid var(--border-color);
+}
+
+.search-tab .search-suggestions {
+  background-color: white;
+  width: 100%;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.search-tab-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.refresh,
+.refresh div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+
+.refresh div {
+  margin-bottom: 1rem;
+}
+
+.refresh div span {
+  color: var(--golden-color);
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+
+.suggestion span:first-of-type {
+  color: var(--golden-color);
+}
